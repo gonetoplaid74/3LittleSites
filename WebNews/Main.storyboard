@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A320" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WebNews" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z73-cS-fva">
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="3QB-8y-Z3n">
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="bUW-ri-hPX"/>
+                                            <constraint firstAttribute="height" constant="40" id="vtl-WD-bBv"/>
+                                        </constraints>
+                                        <color key="color" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </activityIndicatorView>
+                                    <containerView hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xmu-D4-8Wj">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="350" id="9oT-ae-lpS"/>
+                                            <constraint firstAttribute="width" constant="250" id="CpA-FU-yUe"/>
+                                        </constraints>
+                                    </containerView>
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GIz-Ff-6It">
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="http://" borderStyle="roundedRect" placeholder="http://" textAlignment="natural" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="Fc9-kD-OyQ">
+                                                <frame key="frameInset" minX="8" minY="75" width="224" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="WB1" borderStyle="roundedRect" placeholder="Three Characters Max" textAlignment="center" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="j7N-kb-9Ts">
+                                                <frame key="frameInset" minX="72" minY="113" width="97" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="http://" borderStyle="roundedRect" placeholder="http://" textAlignment="natural" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="FNp-ib-l1Y">
+                                                <frame key="frameInset" minX="8" minY="156" width="224" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="WB2" borderStyle="roundedRect" placeholder="Three Characters Max" textAlignment="center" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="yLB-CN-mz1">
+                                                <frame key="frameInset" minX="72" minY="194" width="97" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="http://" borderStyle="roundedRect" placeholder="http://" textAlignment="natural" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="mZt-vZ-TQm">
+                                                <frame key="frameInset" minX="8" minY="239" width="224" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="WB3" borderStyle="roundedRect" placeholder="Three Max" textAlignment="center" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="gxf-N3-sL7">
+                                                <frame key="frameInset" minX="72" minY="283" width="97" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dUh-ps-RSO">
+                                                <frame key="frameInset" minX="8" minY="312" width="46" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                                <state key="normal" title="Back">
+                                                    <color key="titleColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="bookmarkBackBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Puo-SU-003"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fzy-Du-Jct">
+                                                <frame key="frameInset" minX="186" minY="312" width="46" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                                <state key="normal" title="Save">
+                                                    <color key="titleColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="save:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oMl-DW-dEz"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pick 3LittleSites" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mew-JR-COv">
+                                                <frame key="frameInset" minX="22" minY="30" width="197" height="19"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Italic" family="Avenir Next" pointSize="20"/>
+                                                <color key="textColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.37647058820000001" green="0.49019607840000001" blue="0.5450980392" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="345" id="Jll-bK-JrI"/>
+                                            <constraint firstAttribute="width" constant="245" id="PRL-dB-W2U"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="xmu-D4-8Wj" firstAttribute="centerX" secondItem="z73-cS-fva" secondAttribute="centerX" id="0Yd-3B-13S"/>
+                                    <constraint firstItem="GIz-Ff-6It" firstAttribute="centerX" secondItem="z73-cS-fva" secondAttribute="centerX" id="0gN-Ao-vJr"/>
+                                    <constraint firstItem="GIz-Ff-6It" firstAttribute="centerY" secondItem="z73-cS-fva" secondAttribute="centerY" id="DcX-9Q-gtN"/>
+                                    <constraint firstItem="3QB-8y-Z3n" firstAttribute="centerY" secondItem="z73-cS-fva" secondAttribute="centerY" id="Guo-hX-cXT"/>
+                                    <constraint firstItem="xmu-D4-8Wj" firstAttribute="centerY" secondItem="z73-cS-fva" secondAttribute="centerY" id="cf1-Gj-uz9"/>
+                                    <constraint firstItem="3QB-8y-Z3n" firstAttribute="centerX" secondItem="z73-cS-fva" secondAttribute="centerX" id="oF3-dL-3QA"/>
+                                </constraints>
+                            </view>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" semanticContentAttribute="spatial" translatesAutoresizingMaskIntoConstraints="NO" id="DkP-E2-Pr1">
+                                <color key="backgroundColor" red="0.37647058820000001" green="0.49019607840000001" blue="0.5450980392" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="GM6-ks-nJk"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem width="5" style="plain" systemItem="fixedSpace" id="upE-gG-zar"/>
+                                    <barButtonItem image="backbutton" style="plain" id="PBl-Xc-PSP">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <action selector="backWithSender:" destination="BYZ-38-t0r" id="rnt-rQ-qCI"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="20" style="plain" systemItem="fixedSpace" id="R6r-Sk-LG6"/>
+                                    <barButtonItem image="forwardbutton" id="RfV-LS-7Dg">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <action selector="forwardWithSender:" destination="BYZ-38-t0r" id="9h8-L4-3nw"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="KcT-TR-nVg"/>
+                                    <barButtonItem title="BBC" id="JaS-kQ-vuA">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <action selector="loadBBCNews:" destination="BYZ-38-t0r" id="F6d-aa-H3b"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="10" style="plain" systemItem="fixedSpace" id="4gj-Mm-G50"/>
+                                    <barButtonItem title="DM" id="J5L-mW-wuM">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <action selector="loadDailyMail:" destination="BYZ-38-t0r" id="sHI-8V-cxs"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="10" style="plain" systemItem="fixedSpace" id="mXq-EC-jzg"/>
+                                    <barButtonItem title="F1" id="Fpn-Ao-YhS">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <action selector="loadBBCF1:" destination="BYZ-38-t0r" id="eeP-Yz-JfF"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="ufQ-JV-Ytx"/>
+                                    <barButtonItem style="plain" systemItem="refresh" id="hUM-Zv-rBv">
+                                        <color key="tintColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="reloadWithSender:" destination="BYZ-38-t0r" id="ntW-De-RFo"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="10" style="plain" systemItem="fixedSpace" id="I9u-Z7-VmF"/>
+                                    <barButtonItem style="plain" systemItem="bookmarks" id="zGR-ev-4oJ">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <action selector="loadBookmarks:" destination="BYZ-38-t0r" id="hgt-Bz-iS8"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="5" style="plain" systemItem="fixedSpace" id="f6a-1z-dgI"/>
+                                </items>
+                                <color key="tintColor" red="0.37647058820000001" green="0.49019607840000001" blue="0.5450980392" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="barTintColor" red="0.37647058820000001" green="0.49019607840000001" blue="0.5450980392" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="bu8-1a-DQK"/>
+                                </connections>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="DkP-E2-Pr1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7c9-xU-tLw"/>
+                            <constraint firstAttribute="trailing" secondItem="DkP-E2-Pr1" secondAttribute="trailing" id="AOl-qK-swu"/>
+                            <constraint firstAttribute="trailing" secondItem="DkP-E2-Pr1" secondAttribute="trailing" id="GHn-0f-eVm"/>
+                            <constraint firstItem="DkP-E2-Pr1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="IN5-Yy-fNy"/>
+                            <constraint firstItem="DkP-E2-Pr1" firstAttribute="top" secondItem="z73-cS-fva" secondAttribute="bottom" constant="1" id="KZR-PC-HwZ"/>
+                            <constraint firstItem="z73-cS-fva" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="17" id="Qw0-5q-LAX"/>
+                            <constraint firstItem="DkP-E2-Pr1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Sxm-Z2-chu"/>
+                            <constraint firstAttribute="trailing" secondItem="z73-cS-fva" secondAttribute="trailing" id="bat-as-upI"/>
+                            <constraint firstItem="z73-cS-fva" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="iSA-yf-Psj"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="DkP-E2-Pr1" secondAttribute="bottom" id="pmh-tW-EcF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="BookmarkLbl" destination="Mew-JR-COv" id="FY1-PN-erV"/>
+                        <outlet property="Bookmarks" destination="zGR-ev-4oJ" id="Ns3-Hp-WFc"/>
+                        <outlet property="backButton" destination="PBl-Xc-PSP" id="MHP-C5-3Ud"/>
+                        <outlet property="bbcBtn" destination="JaS-kQ-vuA" id="3zz-en-CgM"/>
+                        <outlet property="bookmarkBack" destination="dUh-ps-RSO" id="i0I-gB-3dh"/>
+                        <outlet property="bookmarkView" destination="GIz-Ff-6It" id="ywR-uc-AUH"/>
+                        <outlet property="container" destination="z73-cS-fva" id="czl-hC-uia"/>
+                        <outlet property="dmBtn" destination="J5L-mW-wuM" id="7PZ-6m-qeJ"/>
+                        <outlet property="f1Btn" destination="Fpn-Ao-YhS" id="nMC-zy-ziE"/>
+                        <outlet property="forwardButton" destination="RfV-LS-7Dg" id="QME-NL-CVR"/>
+                        <outlet property="lbl1" destination="j7N-kb-9Ts" id="do7-oR-Q5U"/>
+                        <outlet property="lbl2" destination="yLB-CN-mz1" id="Hj1-KK-ANj"/>
+                        <outlet property="lbl3" destination="gxf-N3-sL7" id="i5i-bl-FgS"/>
+                        <outlet property="reloadButton" destination="hUM-Zv-rBv" id="pzV-eB-1F1"/>
+                        <outlet property="spinner" destination="3QB-8y-Z3n" id="fBG-az-8eB"/>
+                        <outlet property="web1" destination="Fc9-kD-OyQ" id="6di-17-iHL"/>
+                        <outlet property="web2" destination="FNp-ib-l1Y" id="xO2-7r-OGD"/>
+                        <outlet property="web3" destination="mZt-vZ-TQm" id="k56-o1-iVx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.40000000000001" y="164.16791604197903"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="backbutton" width="10" height="17"/>
+        <image name="forwardbutton" width="10" height="17"/>
+    </resources>
+</document>
